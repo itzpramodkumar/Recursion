@@ -16,14 +16,45 @@
 // ;
 
 
-function palindrome(str ,start,end){
+// function palindrome(str ,start,end){
+//     if(start>=end){
+//         return  true;
+//     }
+//     if(str[start]!=str[end]){
+//         return false;
+//     }
+//     return palindrome(str, start+1,end-1);
+// }
+// let str="jhgfdh";
+// console.log(palindrome(str,0,str.length-1))
+
+// function palindrome (str,start,end){
+//     if(start>=end){
+//         return true;
+//     }
+
+//     if(str[start]!=str[end]){
+//         return false;
+//     }
+//     return palindrome(str,start+1,end-1);
+
+// }
+// let str ="MadaM";
+// console.log(palindrome(str,0,str.length-1));
+
+
+function palindrome(str,start,end){
     if(start>=end){
-        return  true;
+        return true;
     }
     if(str[start]!=str[end]){
-        return false;
+        return false
     }
-    return palindrome(str, start+1,end-1);
+    return palindrome (str,start+1,end-1)
 }
-let str="jhgfdh";
+let str="madam";
 console.log(palindrome(str,0,str.length-1))
+
+
+
+

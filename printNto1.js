@@ -1,11 +1,9 @@
 function print(n){
     if(n==0){
-        return;
+        return; 
     }
-    console.log(n);
-        print(n-1);
-
-
+    console.log(n)
+    print(n-1);
 }
-let n=10;
-print(n);
+let n=15;
+print(n)
